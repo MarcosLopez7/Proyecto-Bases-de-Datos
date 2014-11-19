@@ -1,4 +1,4 @@
-<h1>Listing empleado_clientes</h1>
+<h1>Hora del Registro del empleado</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= empleado_cliente.id_cliente %></td>
         <td><%= empleado_cliente.fecha %></td>
         <td><%= empleado_cliente.hora %></td>
-        <td><%= link_to 'Show', empleado_cliente %></td>
-        <td><%= link_to 'Edit', edit_empleado_cliente_path(empleado_cliente) %></td>
-        <td><%= link_to 'Destroy', empleado_cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', empleado_cliente %></td>
+        <td><%= link_to 'Editar', edit_empleado_cliente_path(empleado_cliente) %></td>
+        <td><%= link_to 'Eliminar', empleado_cliente, method: :delete, data: { confirm: 'Estas seguro que quieres eliminar?' } %></td>
       </tr>
     <% end %>
   </tbody>
